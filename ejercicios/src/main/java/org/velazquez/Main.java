@@ -1,6 +1,5 @@
-package org.example;
+package org.velazquez;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
