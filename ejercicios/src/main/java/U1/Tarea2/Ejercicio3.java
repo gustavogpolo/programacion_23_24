@@ -8,11 +8,11 @@ public class Ejercicio3 {
         System.out.println("Introduzca el dividendo: ");
 //Para que permita al usuario introducir datos
         Scanner teclado = new Scanner(System.in);
-        double numero1 = teclado.nextInt();
+        double numero1 = teclado.nextDouble();
         System.out.print("El dividendo introducido es: ");
         System.out.println(numero1);
         System.out.println("Introduzca el divisor: ");
-        double numero2 = teclado.nextInt();
+        double numero2 = teclado.nextDouble();
         System.out.println("El divisor introducido es: ");
         System.out.println(numero2);
         System.out.println("El resultado de la división es: ");
