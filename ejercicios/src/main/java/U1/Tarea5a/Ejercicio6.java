@@ -10,10 +10,10 @@ se mostrará el mensaje "Tiempo incorrecto"*/
 public class Ejercicio6 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        double gravedad = 9.8;
+        final double gravedad = 9.8;
         System.out.println("Introduzca el valor \"tiempo\". ");
         double tiempo = teclado.nextDouble();
-        if (tiempo <= 0) {
+        if (tiempo < 0) {
 
             System.out.println("Tiempo incorrecto.");
 
