@@ -47,7 +47,7 @@ public class Ejercicio3 {
 
             default:
 
-                System.out.println("No existe ese dia mamerto.");
+                System.out.println("No existe ese dia mamerto. Introduce un número del 1 al 7");
 
         }
     }

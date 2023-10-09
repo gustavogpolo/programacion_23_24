@@ -11,8 +11,8 @@ public class Ejercicio4 {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduzca las horas trabajadas");
         int horas = teclado.nextInt();
-        int sueldo_horas = 12;
-        int sueldo_extra = 16;
+        final int sueldo_horas = 12;
+        final int sueldo_extra = 16;
         if (horas <= 40) {
             int sueldo_base = (horas * sueldo_horas);
             System.out.println("Su sueldo es: " + sueldo_base);
