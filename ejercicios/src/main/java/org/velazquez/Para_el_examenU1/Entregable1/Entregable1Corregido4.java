@@ -21,8 +21,8 @@ public class Entregable1Corregido4 {
         //      // Ya sé el número de cifras
         //    } while (numero_cifras <= 0 || numero_cifras % 2 != 0);
 
-        int mitad1 = n / (int) Math.pow(10, numero_cifras / 2);
-        int mitad2 = n % (int) Math.pow(10, numero_cifras / 2);
+        int mitad1 = n / (int) Math.pow(10, (double) numero_cifras / 2);
+        int mitad2 = n % (int) Math.pow(10, (double) numero_cifras / 2);
 
         System.out.println("Primera mitad: " + mitad1);
         System.out.println("Segunda mitad: " + mitad2);
