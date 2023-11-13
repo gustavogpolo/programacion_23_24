@@ -1,9 +1,8 @@
 package org.velazquez.U3;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class Ejercicio2 {
+public class Ejercicio2_corregir {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a, b;
