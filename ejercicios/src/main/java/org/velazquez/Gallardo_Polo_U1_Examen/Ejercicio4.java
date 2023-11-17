@@ -10,6 +10,7 @@ public class Ejercicio4 {
         System.out.println("Introduzca el número de 6 cifrs exactamente: ");
         n = sc.nextInt();
         n1 = n;
+        
         do {
             numero_cifras = 0;
             while (n > 0) {
