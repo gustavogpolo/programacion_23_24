@@ -24,6 +24,8 @@ public class Ejercicio1 {
                 if ((j == 1 || j == altura) || ((i == j) && i + j <= altura + 1) || (i + j == altura + 1) && i <= j) {
                     System.out.print("*");
                 } else {
+
+
                     System.out.print(" ");
                 }
             }

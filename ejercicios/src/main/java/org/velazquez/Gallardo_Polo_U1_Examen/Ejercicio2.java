@@ -17,7 +17,7 @@ public class Ejercicio2 {
         } while (num0y2 > 3);
         System.out.println("Resultado: ");
         for (int i = 1; i == num0y2; i++) {
-            
+
         }
     }
 }
