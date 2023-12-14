@@ -1,4 +1,4 @@
-package org.velazquez.U3;
+package org.velazquez.U3.Tarea1;
 
 import java.util.Scanner;
 

@@ -1,6 +1,4 @@
-package org.velazquez.Para_el_examenU1.Abecedario;
-
-import java.util.Scanner;
+package org.velazquez.U1.Para_el_examenU1.Abecedario;
 
 public class B {
     public static void main(String[] args) {

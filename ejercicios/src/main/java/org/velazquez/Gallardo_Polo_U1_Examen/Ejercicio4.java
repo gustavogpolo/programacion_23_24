@@ -10,7 +10,7 @@ public class Ejercicio4 {
         System.out.println("Introduzca el número de 6 cifrs exactamente: ");
         n = sc.nextInt();
         n1 = n;
-        
+
         do {
             numero_cifras = 0;
             while (n > 0) {
@@ -36,6 +36,7 @@ public class Ejercicio4 {
             System.out.println("El número " + mitad1 + " NO es primo");
         }
         es_primo = true;
+
         for (int i = 2; i < mitad2; i++) {
             if (mitad2 % i == 0) {
                 es_primo = false;

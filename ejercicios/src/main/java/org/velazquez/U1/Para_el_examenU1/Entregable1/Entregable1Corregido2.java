@@ -1,4 +1,4 @@
-package org.velazquez.Para_el_examenU1.Entregable1;
+package org.velazquez.U1.Para_el_examenU1.Entregable1;
 
 public class Entregable1Corregido2 {
     public static void main(String[] args) {

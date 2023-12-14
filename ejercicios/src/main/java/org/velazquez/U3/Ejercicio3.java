@@ -1,7 +1,0 @@
-package org.velazquez.U3;
-
-public class Ejercicio3 {
-    public static void main(String[] args) {
-        
-    }
-}

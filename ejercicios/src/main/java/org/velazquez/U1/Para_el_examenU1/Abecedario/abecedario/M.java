@@ -1,4 +1,4 @@
-package org.velazquez.Para_el_examenU1.Abecedario.abecedario;
+package org.velazquez.U1.Para_el_examenU1.Abecedario.abecedario;
 
 public class M {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.velazquez.Para_el_examenU1.Entregable1;
+package org.velazquez.U1.Para_el_examenU1.Entregable1;
 
 import java.util.Scanner;
 
