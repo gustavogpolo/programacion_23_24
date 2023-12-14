@@ -1,27 +1,52 @@
 package org.velazquez.U3.Examen_U3_GustavoGallardoPolo;
 
+// Crea una función llamada palabraAhorcado que reciba como parámetros dos cadenas (la cadena a
+// adivinar y el resultado
+// parcial) y un carácter a buscar en la cadena a adivinar. Debe devolver el resultado de encontrar
+// ese character en la
+// cadena a adivinar.
+//
+// **Ejemplo:**
+//
+//    palabraAhorcado("programacion","------------",'o') debe devolver "--o-------o-"
+//    palabraAhorcado("programacion","--o-------on",'a') debe devolver "--o--a-a--o-"
+//    palabraAhorcado("hola","----",'x') debe devolver "----"
+
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Ej1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Introduzca la palabra que va a ser adivinada.");
-        String cadena_a_adivinar = sc.next();
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Introduzca la palabra a adivinar");
+        String original = teclado.next();
 
-        System.out.println("Introduce una letra: ");
-        String letra1 = sc.next();
+        String parcial = "";
 
-        String resultado_parcial = "-----------";
+        for (int i = 0; i < original.length(); i++) {
+            parcial = parcial + "-";
+        }
+        while (!original.equals(parcial)) {
+            System.out.println("Introduce una letra");
+            char letra = teclado.next().charAt(0);
 
-        char letra = letra1.charAt(0);
-//        do {
-//            palabraAhorcado(cadena_a_adivinar, resultado_parcial, letra);
-//        } while (String cadena_a_adivinar != resultado_parcial);
+            parcial = palabraAhorcado(original, parcial, letra);
 
+            System.out.println(parcial);
+        }
     }
 
-    public static String palabraAhorcado(String cadena_a_adivinar, String resultado_parcial, char letra) {
+    public static String palabraAhorcado(String original, String parcial, char c) {
 
-        return resultado_parcial;
+        String resultado = "";
+        for (int i = 0; i < original.length(); i++) {
+            if (original.charAt(i) == c) {
+                resultado = resultado + c;
+
+            } else {
+                resultado = resultado + parcial.charAt(i);
+            }
+        }
+        return resultado;
     }
 }

@@ -1,58 +1,136 @@
 package org.velazquez.U3.Examen_U3_GustavoGallardoPolo;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Ej3 {
     public static void main(String[] args) {
-        //Realiza un programa que muestre por pantalla un array bidimensional con tantas filas y columnas como indique el usuario.
-        // Deberá rellenarse la matriz con números aleatorios entre 14 y 78 (ambos incluidos).
 
-        //Definimos la clase scanner
-        Scanner sc = new Scanner(System.in);
-        int pares[];
-        int impares[];
-        //Pedimos al usuario qe introduzca los valores de filas y de columnas
-        System.out.println("Introduzca el número de filas: ");
-        int filas = sc.nextInt();
-        System.out.println("Introduzca el número de columnas: ");
-        int columnas = sc.nextInt();
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Introduce las filas del array: ");
+        int filas = teclado.nextInt();
 
-        //Definimos los límites de los números aleatórios.
-        int limite_superior = 78;
-        int limite_inferior = 14;
+        Scanner teclado2 = new Scanner(System.in);
+        System.out.println("Introduce las columnas del array: ");
+        int columnas = teclado2.nextInt();
 
-        //Conduce a la funcion llamada generar matriz.
-        int[][] matriz = generarMatriz(filas, columnas, limite_superior, limite_inferior);
-        System.out.println("Matriz: " + Arrays.deepToString(matriz));
-        System.out.println();
+        int[][] datos = new int[filas][columnas];
+        for (int i = 0; i < datos.length; i++) {
+            for (int j = 0; j < datos[i].length; j++) {
+                datos[i][j] = (int) (Math.random() * (64) + 14);
+                System.out.print(datos[i][j]);
+                System.out.print(" | ");
+            }
 
-//        matriz
-//        System.out.println("Pares: " + pares());
-//        System.out.println("Impares: " + impares());
-        System.out.println("Suma de pares: ");
-        System.out.println("Suma de impares: ");
-        System.out.println("Media de pares: ");
-        System.out.println("Media de impares: ");
-        System.out.println("Máximo de pares: ");
-        System.out.println("Mínimo de pares: ");
-        System.out.println("Máximo de impares: ");
-        System.out.println("Mínimo de impares: ");
+            System.out.println();
+        }
 
 
-    }
+        int contador = 0;
 
-    public static int[][] generarMatriz(int filas, int columnas, int limite_superior, int limite_inferior) {
-        Random random = new Random();
-        int[][] matriz = new int[filas][columnas];
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
-                matriz[i][j] = random.nextInt(limite_superior - limite_inferior + 1) + limite_inferior;
+                if (((i % 2 == 0) && (j % 2 == 0)) | (i == 0 && j == 0)) {
+                    contador++;
+                }
             }
         }
-        return matriz;
 
+        int[] pares = new int[contador];
+
+        int contador2 = 0;
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                if (((i % 2 == 0) && (j % 2 == 0)) | (i == 0 && j == 0)) {
+                    pares[contador2] = datos[i][j];
+                    contador2++;
+                }
+            }
+        }
+
+
+        contador = 0;
+
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                if (((i % 2 != 0) && (j % 2 != 0))) {
+                    contador++;
+                }
+            }
+        }
+
+        int[] impares = new int[contador];
+
+        contador2 = 0;
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < columnas; j++) {
+                if (((i % 2 != 0) && (j % 2 != 0))) {
+                    impares[contador2] = datos[i][j];
+                    contador2++;
+                }
+            }
+        }
+        System.out.println("PARES: " + Arrays.toString(pares));
+
+        System.out.println("IMPARES: " + Arrays.toString(impares));
+
+        int media_pares = 0;
+        int media_impares = 0;
+
+        for (int i = 0; i < pares.length; i++) {
+            media_pares = pares[i] + media_pares;
+        }
+        System.out.println();
+
+        for (int i = 0; i < impares.length; i++) {
+            media_impares = impares[i] + media_impares;
+        }
+        System.out.println();
+        System.out.println("SUMA DE PARES: " + media_pares);
+        System.out.println("SUMA DE IMPARES: " + media_impares);
+        System.out.println("MEDIA DE PARES: " + media_pares / pares.length);
+        System.out.println("MEDIA DE IMPARES: " + media_impares / impares.length);
+
+
+        int maximo = pares[0];
+
+        for (int j = 0; j < pares.length; j++) {
+            if (pares[j] >= maximo) {
+                maximo = pares[j];
+            }
+        }
+        System.out.println("MÁXIMO DE PARES: " + maximo);
+
+        maximo = impares[0];
+
+        for (int j = 0; j < impares.length; j++) {
+            if (impares[j] >= maximo) {
+                maximo = impares[j];
+            }
+        }
+        System.out.println("MÁXIMO DE IMPARES: " + maximo);
+
+
+        int minimo = pares[0];
+
+        for (int j = 0; j < pares.length; j++) {
+            if (pares[j] <= minimo) {
+                minimo = pares[j];
+            }
+        }
+        System.out.println("MÍNIMO DE PARES: " + minimo);
+
+
+        minimo = impares[0];
+
+        for (int j = 0; j < impares.length; j++) {
+            if (impares[j] <= minimo) {
+                minimo = impares[j];
+            }
+        }
+        System.out.println("MÍNIMO DE IMPARES: " + minimo);
 
     }
+
+
 }

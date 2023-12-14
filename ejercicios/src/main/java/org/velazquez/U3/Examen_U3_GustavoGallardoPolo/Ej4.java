@@ -4,42 +4,46 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Ej4 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String[][] matriz = new String[3][3];
-        System.out.println("Introduce los elementos de la matriz: ");
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                matriz[i][j] = sc.next();
-            }
+    public class ej4 {
+        public static void main(String[] args) {
+            //
+            String[][] matriz = {
+                    {"a", "b", "c"},
+                    {"d", "e", "f"},
+                    {"g", "h", "i"}
+            };
+            String[] fila = {"j", "k", "l"};
+            int pos = 1;
+
+            mostrarMatriz(matriz);
+
             System.out.println();
-        }
-        System.out.print("Matriz: ");
-        System.out.println(Arrays.deepToString(matriz));
-        System.out.println("Introduce los elementos de la fila: ");
-        String[] fila = new String[3];
-        for (int i = 0; i < 3; i++) {
-            fila[i] = sc.next();
+
+            String[][] resultado = insertarFilaEnMatriz(matriz, fila, pos);
+
+            // mostrar matriz
+            mostrarMatriz(resultado);
         }
 
-        System.out.print("Fila: ");
-        System.out.println(Arrays.deepToString(fila));
+        public static String[][] insertarFilaEnMatriz(String[][] matriz, String[] fila, int pos) {
 
-        System.out.print("Indique en que pocion quiere insertar la fila: ");
-        int pos = sc.nextInt();
-
-        insertarFilaEnMatriz(matriz, fila, pos);
-    }
-
-    public static String[][] insertarFilaEnMatriz(String[][] matriz, String[] fila, int pos) {
-        matriz = new String[4][3];
-        for (int i = 0; i < pos; i++) {
-            for (int j = 0; j < 3; j++) {
-                matriz[i][j] = fila[i];
+            String[][] resultado = new String[matriz.length + 1][matriz[0].length];
+            int j = 0;
+            for (int i = 0; i < resultado.length; i++) {
+                if (i == pos) {
+                    resultado[i] = fila;
+                } else {
+                    resultado[i] = matriz[j];
+                    j++;
+                }
             }
-
+            return resultado;
         }
 
-        return matriz;
+        public static void mostrarMatriz(String[][] matriz) {
+            for (String[] strings : matriz) {
+                System.out.println(Arrays.toString(strings));
+            }
+        }
     }
 }
