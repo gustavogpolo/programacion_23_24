@@ -1,6 +1,5 @@
 package org.velazquez.U3.Tarea1;
 
-<<<<<<< HEAD
 import java.util.Scanner;
 
 public class Ejercicio3 {
@@ -47,10 +46,6 @@ public class Ejercicio3 {
         altura = sc.nextDouble();
         double volumen = Math.PI * Math.sqrt(radio) * altura;
         System.out.println("Su area es: " + volumen);
-=======
-public class Ejercicio3 {
-    public static void main(String[] args) {
 
->>>>>>> f37d12d461d16f574b4fbabce96289765168377f
     }
 }
