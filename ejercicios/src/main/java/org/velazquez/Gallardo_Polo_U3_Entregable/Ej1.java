@@ -14,14 +14,14 @@ public class Ej1 {
         //Definimos la clase Scanner y expulsamos un mensaje para que ingrese el tamaño deseado del Vector
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el tamaño del vector: ");
-        int tamaño = sc.nextInt();
+        int tamano = sc.nextInt();
 
         // Definimos los límites de los números aleatorios
         int limite_inferior = 16;
         int limite_superior = 65;
 
         //Conduce a la función llamada generar Vector
-        int[] vector = generarVector(tamaño, limite_inferior, limite_superior);
+        int[] vector = generarVector(tamano, limite_inferior, limite_superior);
         //Expulsa el vector generado por la función
         System.out.println(Arrays.toString(vector));
 
@@ -32,10 +32,10 @@ public class Ej1 {
     }
 
     //
-    public static int[] generarVector(int tamaño, int limite_inferior, int limite_superior) {
+    public static int[] generarVector(int tamano, int limite_inferior, int limite_superior) {
         Random random = new Random();
-        int[] vector = new int[tamaño];
-        for (int i = 0; i < tamaño; i++) {
+        int[] vector = new int[tamano];
+        for (int i = 0; i < tamano; i++) {
             vector[i] = random.nextInt(limite_superior - limite_inferior + 1) + limite_inferior;
         }
         return vector;
