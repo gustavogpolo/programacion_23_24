@@ -1,8 +1,4 @@
-package org.velazquez.U4.Entregable_23_24.Festival;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
+package org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival;
 
 public class escenario {
     public cantante cantante1;

@@ -1,4 +1,4 @@
-package org.velazquez.U4.Entregable_23_24.Festival;
+package org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival;
 
 public class cancion {
 

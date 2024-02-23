@@ -1,11 +1,9 @@
-package org.velazquez.U4.Entregable_23_24;
+package org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24;
 
-import org.velazquez.U4.Entregable_23_24.Festival.cancion;
-import org.velazquez.U4.Entregable_23_24.Festival.cantante;
-import org.velazquez.U4.Entregable_23_24.Festival.concierto;
-import org.velazquez.U4.Entregable_23_24.Festival.escenario;
-
-import java.sql.SQLOutput;
+import org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival.cancion;
+import org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival.cantante;
+import org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival.concierto;
+import org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival.escenario;
 
 public class main {
     public static void main(String[] args) {

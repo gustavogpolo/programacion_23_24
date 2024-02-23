@@ -1,4 +1,4 @@
-package org.velazquez.U4.Entregable_23_24.Festival;
+package org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival;
 
 public class concierto {
 
@@ -20,27 +20,27 @@ public class concierto {
 
     }
 
-    public org.velazquez.U4.Entregable_23_24.Festival.escenario getEscenario1() {
+    public org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival.escenario getEscenario1() {
         return escenario1;
     }
 
-    public void setEscenario1(org.velazquez.U4.Entregable_23_24.Festival.escenario escenario1) {
+    public void setEscenario1(org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival.escenario escenario1) {
         this.escenario1 = escenario1;
     }
 
-    public org.velazquez.U4.Entregable_23_24.Festival.escenario getEscenario2() {
+    public org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival.escenario getEscenario2() {
         return escenario2;
     }
 
-    public void setEscenario2(org.velazquez.U4.Entregable_23_24.Festival.escenario escenario2) {
+    public void setEscenario2(org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival.escenario escenario2) {
         this.escenario2 = escenario2;
     }
 
-    public org.velazquez.U4.Entregable_23_24.Festival.escenario getEscenario3() {
+    public org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival.escenario getEscenario3() {
         return escenario3;
     }
 
-    public void setEscenario3(org.velazquez.U4.Entregable_23_24.Festival.escenario escenario3) {
+    public void setEscenario3(org.velazquez.U4.U4_Gustavo_Gallardo_Entregable_23_24.Festival.escenario escenario3) {
         this.escenario3 = escenario3;
     }
 
