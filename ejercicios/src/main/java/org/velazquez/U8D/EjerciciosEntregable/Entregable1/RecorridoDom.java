@@ -1,4 +1,4 @@
-package U8.EjerciciosEntregable.Entregable1;
+package org.velazquez.U8D.EjerciciosEntregable.Entregable1;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

@@ -1,4 +1,4 @@
-package U8.EjerciciosChema.XML.ModificandoDOM;
+package org.velazquez.U8D.EjerciciosChema.XML.ModificandoDOM;
 
 public class Asignatura {
     private String nombre;

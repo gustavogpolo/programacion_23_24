@@ -1,4 +1,4 @@
-package U8.EjerciciosChema.XML.EjemploDOM;
+package org.velazquez.U8D.EjerciciosChema.XML.EjemploDOM;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

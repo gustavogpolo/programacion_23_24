@@ -1,4 +1,4 @@
-package U9.tarea1;
+package org.velazquez.U9D.tarea1;
 
 import java.sql.*;
 

@@ -1,4 +1,4 @@
-package org.velazquez.UD9.EJ1;
+package org.velazquez.Gallardo_Polo_U9_recuperacion;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,8 +13,6 @@ public class Main {
 
         consultas.productosVendidos();
         System.out.println("\n\n\n");
-
-        consultas.informeCategoria();
 
         System.out.println("\n\n-------------------- TRASACCIONES --------------------");
         System.out.println();

@@ -1,4 +1,4 @@
-package U8.EjerciciosChema.XML.EjemploDOM;
+package org.velazquez.U8D.EjerciciosChema.XML.EjemploDOM;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,7 +21,7 @@ public class DOMPersona {
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = dbf.newDocumentBuilder();
             Document doc =
-                    db.parse(new File("src/main/java/U8_xml_json/XML/ejercicios/ejemploDOM/personasXML.xml"));
+                    db.parse(new File("file:///C:/Users/DAW_M/Desktop/programacion_23_24/ejercicios/src/main/java/org/velazquez/Gallardo_Polo_U8_recuperacion/personasXML.xml"));
 
             // Cojo directamente las etiquetas persona
             NodeList nl = doc.getElementsByTagName("persona");

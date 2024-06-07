@@ -14,20 +14,15 @@ public class Consultas {
 
         try {
             //Lo de DESC LIMIT 1 lo he tenido que buscar en internet porque no tenia ni idea
-            String sql = "SELECT * FROM employees WHERE officeCode = (SELECT officeCode FROM employees GROUP BY officeCode ORDER BY COUNT(*) DESC LIMIT 1) ";
+            String sql = "SELECT c.customerName, c.salesRepEmployeeNumber, o.city FROM customers c join employees e on c.salesRepEmployeeNumber = e.employeeNumber join offices o on e.officeCode = o.officeCode; ";
             // OBLIGATORIO
             PreparedStatement statement = con.prepareStatement(sql);
             // FILA X FILA IMPRIMIENDO DATOS rs.getTipodato ("NOMBRE COLUMNA")
             ResultSet rs = statement.executeQuery();
             while (rs.next()) {
-                System.out.println("Numero de empleado: " + rs.getInt("employeeNumber"));
-                System.out.println("Nombre: " + rs.getString("firstName"));
-                System.out.println("Apellido: " + rs.getString("lastName"));
-                System.out.println("Extension: " + rs.getString("extension"));
-                System.out.println("Email: " + rs.getString("email"));
-                System.out.println("Oficina: " + rs.getString("officeCode"));
-                System.out.println("ReportsTo: " + rs.getInt("reportsTo"));
-                System.out.println("Titulo: " + rs.getString("jobTitle"));
+                System.out.println("Nombre de cliente: " + rs.getString("customerName"));
+                System.out.println("Nombre: " + rs.getInt("salesRepEmployeeNumber"));
+                System.out.println("Apellido: " + rs.getString("o.city"));
                 System.out.println("------------------------------------------------");
                 System.out.println();
             }
@@ -38,7 +33,7 @@ public class Consultas {
     }
 
 
-    public void productosNoVendidos() {
+    public void productosVendidos() {
         Connection con = ConexionBD.getConnection();
 
         try {
