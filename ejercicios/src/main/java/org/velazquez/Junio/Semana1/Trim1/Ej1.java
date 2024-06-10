@@ -8,7 +8,7 @@ public class Ej1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduzca un número n: ");
-        int n = 3; //sc.nextInt();
+        int n = 7; //sc.nextInt();
         imprimirPiramide(n);
     }
 
