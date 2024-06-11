@@ -18,7 +18,6 @@ class ejercicio1 {
             Scanner teclado2 = new Scanner(System.in);
             System.out.println("Introduce un numero: ");
             int numero = teclado.nextInt();
-            ;
             a[i] = numero;
         }
 

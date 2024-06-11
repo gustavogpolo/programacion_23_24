@@ -3,7 +3,7 @@ package org.velazquez.Junio.Semana0;
 import java.util.Scanner;
 
 /*
-Pide dos números por teclaro e indica si el segundo es divisible por el primero.
+Pide dos números por teclado e indica si el segundo es divisible por el primero.
 
 Ej: Si numero1=10 y numero2=5 debría mostrar: "El número 5 es divisible de 10"
  */

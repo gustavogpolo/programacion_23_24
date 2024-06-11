@@ -1,5 +1,5 @@
 package org.velazquez.Junio.Semana0;
-
+// Realiza la suma y la media de los elementos del array
 public class V1Ej20 {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 213, 4234, 12};

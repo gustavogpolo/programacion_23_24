@@ -1,4 +1,4 @@
-package org.velazquez.Junio.Semana1.Trim2;
+package org.velazquez.Junio.Semana2.Trim1;
 
 import java.util.Random;
 
@@ -11,7 +11,7 @@ public class Ej2 {
         // Rellenar la matriz con números aleatorios entre 200 y 300
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-                matriz[i][j] = random.nextInt(101) + 200; // Números aleatorios entre 200 y 300
+                matriz[i][j] = random.nextInt(100,200) ; // Números aleatorios entre 100 y 200
             }
         }
 

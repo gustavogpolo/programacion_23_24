@@ -1,5 +1,5 @@
 package org.velazquez.Junio.Semana0;
-
+// Di el elemento menor y mayor de un array
 public class V1Ej21 {
     public static void main(String[] args) {
         int[] array = {70, 50, 20, 60, 40, 100};

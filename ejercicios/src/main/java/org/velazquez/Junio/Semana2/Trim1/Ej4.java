@@ -1,4 +1,4 @@
-package org.velazquez.Junio.Semana1.Trim2;
+package org.velazquez.Junio.Semana2.Trim1;
 
 import java.util.Random;
 
