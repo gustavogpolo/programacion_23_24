@@ -21,7 +21,7 @@ public abstract class MonedaVirtual extends Cuenta implements Minar{
 
     @Override
     public String toString() {
-        return "MonedaVirtual{" +
+        return super.toString() + "MonedaVirtual{" +
                 "hashcode_direccion_wallet='" + hashcode_direccion_wallet + '\'' +
                 '}';
     }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-08-06T10:17:50.962164100Z</date>
+  <millis>1722939470962</millis>
+  <nanos>164100</nanos>
+  <sequence>0</sequence>
+  <logger>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</logger>
+  <level>INFO</level>
+  <class>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</class>
+  <method>agregarEntrenador</method>
+  <thread>1</thread>
+  <message>Entrenador agregado: Zinedine Zidane</message>
+</record>
+<record>
+  <date>2024-08-06T10:17:51.024971900Z</date>
+  <millis>1722939471024</millis>
+  <nanos>971900</nanos>
+  <sequence>1</sequence>
+  <logger>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</logger>
+  <level>INFO</level>
+  <class>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</class>
+  <method>agregarEquipo</method>
+  <thread>1</thread>
+  <message>Equipo agregado: Real Madrid</message>
+</record>
+<record>
+  <date>2024-08-06T10:17:51.039497600Z</date>
+  <millis>1722939471039</millis>
+  <nanos>497600</nanos>
+  <sequence>2</sequence>
+  <logger>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</logger>
+  <level>INFO</level>
+  <class>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</class>
+  <method>guardarDatos</method>
+  <thread>1</thread>
+  <message>Datos de equipo guardados.</message>
+</record>
+<record>
+  <date>2024-08-06T10:17:51.052017400Z</date>
+  <millis>1722939471052</millis>
+  <nanos>17400</nanos>
+  <sequence>3</sequence>
+  <logger>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</logger>
+  <level>INFO</level>
+  <class>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</class>
+  <method>guardarDatos</method>
+  <thread>1</thread>
+  <message>Datos de entrebadores guardados.</message>
+</record>
+<record>
+  <date>2024-08-06T10:17:51.054018700Z</date>
+  <millis>1722939471054</millis>
+  <nanos>18700</nanos>
+  <sequence>4</sequence>
+  <logger>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</logger>
+  <level>INFO</level>
+  <class>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</class>
+  <method>cargarDatos</method>
+  <thread>1</thread>
+  <message>Datos de equipos guardados.</message>
+</record>
+<record>
+  <date>2024-08-06T10:17:51.055541700Z</date>
+  <millis>1722939471055</millis>
+  <nanos>541700</nanos>
+  <sequence>5</sequence>
+  <logger>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</logger>
+  <level>INFO</level>
+  <class>VERANO.POO.FUTBOL_HASHCODE.Clases.GestorDeFutbol</class>
+  <method>cargarDatos</method>
+  <thread>1</thread>
+  <message>Datos de entrenadores guardados.</message>
+</record>
+</log>

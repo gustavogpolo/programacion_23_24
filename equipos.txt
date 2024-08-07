@@ -1,0 +1,1 @@
+Equipo{nombre='Real Madrid', jugadores=[Jugador{nombre='Cristiano Ronaldo', posicion='Delantero', numeroCamiseta=7}, Jugador{nombre='Segio Ramos', posicion='Defensa', numeroCamiseta=4}], entrenador=Zinedine Zidane}

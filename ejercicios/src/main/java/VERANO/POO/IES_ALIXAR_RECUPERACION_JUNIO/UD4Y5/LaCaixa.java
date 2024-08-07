@@ -20,9 +20,8 @@ public class LaCaixa extends BancaTradicional {
 
     @Override
     public String toString() {
-        return "LaCaixa: " + "Nombre de la tarjeta: " + nombre_tarjeta;
+        return super.toString() + "LaCaixa: " + "Nombre de la tarjeta: " + nombre_tarjeta;
     }
-
     @Override
     public void ingresar(long ingreso) {
         super.ingresar(ingreso);

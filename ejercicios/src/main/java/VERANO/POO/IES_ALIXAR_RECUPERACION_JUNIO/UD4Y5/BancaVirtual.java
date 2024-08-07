@@ -30,7 +30,7 @@ public abstract class BancaVirtual extends Cuenta {
 
     @Override
     public String toString() {
-        return "BancaVirtual{" +
+        return  super.toString() + "BancaVirtual{" +
                 "direccion_sede='" + direccion_sede + '\'' +
                 ", url_aplicacion='" + url_aplicacion + '\'' +
                 '}';

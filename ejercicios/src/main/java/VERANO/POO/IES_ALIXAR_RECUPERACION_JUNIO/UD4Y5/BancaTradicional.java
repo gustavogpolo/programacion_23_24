@@ -21,7 +21,7 @@ public abstract class BancaTradicional extends Cuenta {
 
     @Override
     public String toString() {
-        return "BancaTradicional{" +
+        return super.toString()+  "BancaTradicional{" +
                 "sucursal_apertura='" + sucursal_apertura + '\'' +
                 '}';
     }
